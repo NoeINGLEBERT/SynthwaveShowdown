@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.02.00">
+<objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{f94d56ca-5ab8-444a-9f1c-1f598fad41ec}">
 		<property name="name">
-			<value>beat_melo</value>
+			<value>music_prebeat</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a8470aa6-48ef-4cd2-a7f0-c0ed2c1bb935}</destination>

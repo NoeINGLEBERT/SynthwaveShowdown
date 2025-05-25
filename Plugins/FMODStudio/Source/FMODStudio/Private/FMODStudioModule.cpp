@@ -62,15 +62,15 @@ const TCHAR *FMODSystemContextNames[EFMODSystemContext::Max] = {
     TEXT("Auditioning"), TEXT("Runtime"), TEXT("Editor"),
 };
 
-void *F_CALLBACK FMODMemoryAlloc(unsigned int size, FMOD_MEMORY_TYPE type, const char *sourcestr)
+void *F_CALL FMODMemoryAlloc(unsigned int size, FMOD_MEMORY_TYPE type, const char *sourcestr)
 {
     return FMemory::Malloc(size);
 }
-void *F_CALLBACK FMODMemoryRealloc(void *ptr, unsigned int size, FMOD_MEMORY_TYPE type, const char *sourcestr)
+void *F_CALL FMODMemoryRealloc(void *ptr, unsigned int size, FMOD_MEMORY_TYPE type, const char *sourcestr)
 {
     return FMemory::Realloc(ptr, size);
 }
-void F_CALLBACK FMODMemoryFree(void *ptr, FMOD_MEMORY_TYPE type, const char *sourcestr)
+void F_CALL FMODMemoryFree(void *ptr, FMOD_MEMORY_TYPE type, const char *sourcestr)
 {
     FMemory::Free(ptr);
 }
@@ -168,7 +168,6 @@ public:
         , bUseSound(true)
         , bListenerMoved(true)
         , bAllowLiveUpdate(true)
-        , bBanksLoaded(false)
         , LowLevelLibHandle(nullptr)
         , StudioLibHandle(nullptr)
         , bMixerPaused(false)
@@ -177,6 +176,7 @@ public:
         for (int i = 0; i < EFMODSystemContext::Max; ++i)
         {
             StudioSystem[i] = nullptr;
+            bBanksLoaded[i] = false;
         }
     }
 
@@ -320,7 +320,7 @@ public:
     /** True if we allow live update */
     bool bAllowLiveUpdate;
 
-    bool bBanksLoaded;
+    bool bBanksLoaded[EFMODSystemContext::Max];
 
     /** Dynamic library */
     FString BaseLibPath;
@@ -809,20 +809,8 @@ void FFMODStudioModule::UnloadBanks(EFMODSystemContext::Type Type)
 {
     if (StudioSystem[Type])
     {
-        int bankCount;
-        verifyfmod(StudioSystem[Type]->getBankCount(&bankCount));
-        if (bankCount > 0)
-        {
-            TArray<FMOD::Studio::Bank*> bankArray;
-
-            bankArray.SetNumUninitialized(bankCount, EAllowShrinking::No);
-            verifyfmod(StudioSystem[Type]->getBankList(bankArray.GetData(), bankCount, &bankCount));
-
-            for (int i = 0; i < bankCount; i++)
-            {
-                verifyfmod(bankArray[i]->unload());
-            }
-        }
+        verifyfmod(StudioSystem[Type]->unloadAll());
+        bBanksLoaded[Type] = false;
     }
 }
 
@@ -1300,7 +1288,14 @@ struct NamedBankEntry
 
 bool FFMODStudioModule::AreBanksLoaded()
 {
-    return bBanksLoaded;
+    for (int i = 0; i < EFMODSystemContext::Max; ++i)
+    {
+        if (bBanksLoaded[i])
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 bool FFMODStudioModule::SetLocale(const FString& LocaleName)
@@ -1488,22 +1483,37 @@ void FFMODStudioModule::LoadBanks(EFMODSystemContext::Type Type)
         }
     }
 
-    bBanksLoaded = true;
+    bBanksLoaded[Type] = true;
 }
 
 #if WITH_EDITOR
 void FFMODStudioModule::ReloadBanks()
 {
     UE_LOG(LogFMOD, Verbose, TEXT("Refreshing auditioning system"));
-
-    StopAuditioningInstance();
-    UnloadBanks(EFMODSystemContext::Auditioning);
-    DestroyStudioSystem(EFMODSystemContext::Editor);
+    bool bReloadAuditioningBanks = 0;
+    bool bReloadEditorBanks = 0;
+    if (bBanksLoaded[EFMODSystemContext::Auditioning])
+    {
+        StopAuditioningInstance();
+        UnloadBanks(EFMODSystemContext::Auditioning);
+        bReloadAuditioningBanks = true;
+    }
+    if (bBanksLoaded[EFMODSystemContext::Editor])
+    {
+        UnloadBanks(EFMODSystemContext::Editor);
+        bReloadEditorBanks = true;
+    }
 
     AssetTable.Load();
 
-    LoadBanks(EFMODSystemContext::Auditioning);
-    CreateStudioSystem(EFMODSystemContext::Editor);
+    if (bReloadAuditioningBanks)
+    {
+        LoadBanks(EFMODSystemContext::Auditioning);
+    }
+    if (bReloadEditorBanks)
+    {
+        LoadBanks(EFMODSystemContext::Editor);
+    }
 }
 
 void FFMODStudioModule::LoadEditorBanks()

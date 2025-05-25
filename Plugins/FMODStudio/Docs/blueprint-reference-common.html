@@ -7,7 +7,7 @@
 <body>
 <div class="docs-body">
 <div class="manual-toc">
-<p>Unreal Integration 2.02</p>
+<p>Unreal Integration 2.03</p>
 <ul>
 <li><a href="welcome.html">Welcome to FMOD for Unreal</a></li>
 <li><a href="user-guide.html">User Guide</a></li>
@@ -147,6 +147,7 @@
 <dd>Name of the parameter.</dd>
 </dl>
 <p>Will be deprecated in FMOD 2.01, use <a class="apilink" href="blueprint-reference-common.html#get-global-parameter-value-by-name">Get Global Parameter Value By Name</a> instead.</p>
+<p>Lookups using the full names of parameters (i.e. "parameter:/MyFolder/MyParameter") will only succeed if the <a href="https://fmod.com/docs/2.03/api/glossary.html#studio-strings-bank">strings bank</a> is loaded. Shortened names (i.e. "MyParameter") do not require the strings bank to be loaded.</p>
 <p><strong>See Also:</strong> <a class="apilink" href="blueprint-reference-common.html#set-global-parameter-by-name">Set Global Parameter By Name</a></p>
 <h2 api="function" id="get-global-parameter-value-by-name"><a href="#get-global-parameter-value-by-name">Get Global Parameter Value By Name</a></h2>
 <p>Get a global parameter value from the System.</p>
@@ -171,6 +172,7 @@
 <dt>FinalValue</dt>
 <dd>Final combined parameter value.</dd>
 </dl>
+<p>Lookups using the full names of parameters (i.e. "parameter:/MyFolder/MyParameter") will only succeed if the <a href="https://fmod.com/docs/2.03/api/glossary.html#studio-strings-bank">strings bank</a> is loaded. Shortened names (i.e. "MyParameter") do not require the strings bank to be loaded.</p>
 <h2 api="function" id="get-output-drivers"><a href="#get-output-drivers">Get Output Drivers</a></h2>
 <p>List all output device names.</p>
 <p><img alt="Get Output Drivers" src="images/get-output-drivers.png" /></p>
@@ -397,6 +399,7 @@ The sound does not travel with any actor.</p>
 <dt>Value</dt>
 <dd>Value to apply to the parameter.</dd>
 </dl>
+<p>Lookups using the full names of parameters (i.e. "parameter:/MyFolder/MyParameter") will only succeed if the <a href="https://fmod.com/docs/2.03/api/glossary.html#studio-strings-bank">strings bank</a> is loaded. Shortened names (i.e. "MyParameter") do not require the strings bank to be loaded.</p>
 <h2 api="function" id="set-locale"><a href="#set-locale">Set Locale</a></h2>
 <p>Set the active locale for subsequent bank loads.</p>
 <p><img alt="Set Locale" src="images/set-locale.png" /></p>
@@ -519,7 +522,7 @@ The sound does not travel with any actor.</p>
 <dd>Volume value.</dd>
 </dl></div>
 
-<p class="manual-footer">Unreal Integration 2.02.26 (2024-12-18). &copy; 2024 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.03.07 (2025-04-01). &copy; 2025 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 

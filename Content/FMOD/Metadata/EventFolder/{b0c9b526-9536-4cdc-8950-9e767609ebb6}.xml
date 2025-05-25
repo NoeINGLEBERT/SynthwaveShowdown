@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{b0c9b526-9536-4cdc-8950-9e767609ebb6}">
+		<property name="name">
+			<value>Electro-Swing</value>
+		</property>
+		<relationship name="folder">
+			<destination>{39ecdd49-f2c5-4a03-8625-a05339c41396}</destination>
+		</relationship>
+	</object>
+</objects>

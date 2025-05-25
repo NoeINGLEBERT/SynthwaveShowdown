@@ -7,7 +7,7 @@
 <body>
 <div class="docs-body">
 <div class="manual-toc">
-<p>Unreal Integration 2.02</p>
+<p>Unreal Integration 2.03</p>
 <ul>
 <li><a href="welcome.html">Welcome to FMOD for Unreal</a></li>
 <li class="manual-current-chapter manual-active-chapter"><a href="user-guide.html">User Guide</a><ul>
@@ -23,7 +23,6 @@
 <li><a href="#android">Android</a></li>
 <li><a href="#ps4">PS4</a></li>
 <li><a href="#ps5">PS5</a></li>
-<li><a href="#xbox-one">XBox One</a></li>
 <li><a href="#xbox-series-xs">XBox Series X|S</a></li>
 <li><a href="#switch">Switch</a></li>
 </ul>
@@ -164,8 +163,6 @@
 <p>Install the PS4 plugin following the instructions for <a class="apilink" href="#platform-specific-integrations">Platform Specific Integrations</a>. Additional setup is required for this platform, please see the <a href="platform-specifics.html#ps4">Platform Specifics | PS4</a> section for more information.</p>
 <h4 id="ps5"><a href="#ps5">PS5</a></h4>
 <p>Install the PS5 plugin following the instructions for <a class="apilink" href="#platform-specific-integrations">Platform Specific Integrations</a>. Additional setup is required for this platform, please see the <a href="platform-specifics.html#ps5">Platform Specifics | PS5</a> section for more information.</p>
-<h4 id="xbox-one"><a href="#xbox-one">XBox One</a></h4>
-<p>Install the Xbox One plugin following the instructions for <a class="apilink" href="#platform-specific-integrations">Platform Specific Integrations</a>. Additional setup is required for this platform, please see the <a href="platform-specifics.html#xbox-one_1">Platform Specifics | Xbox One</a> section for more information.</p>
 <h4 id="xbox-series-xs"><a href="#xbox-series-xs">XBox Series X|S</a></h4>
 <p>Install the XBox Series X|S plugin following the instructions for <a class="apilink" href="#platform-specific-integrations">Platform Specific Integrations</a>. Additional setup is required for this platform, please see the <a href="platform-specifics.html#xbox-series-xs">Platform Specifics | Xbos Series X|S</a> section for more information.</p>
 <h4 id="switch"><a href="#switch">Switch</a></h4>
@@ -309,7 +306,7 @@ You can disable occlusion, per instance, and adjust the Trace Channel in the Com
 <h3 id="snapshot-reverb-effects"><a href="#snapshot-reverb-effects">2.8.1 Snapshot Reverb Effects</a></h3>
 <p>The workflow to use reverb zones is to set up snapshots in FMOD Studio. Snapshots can modify global reverb effects, change any bus volume, and modify any DSP value. To help trigger snapshots for reverb effects, the integration exports all snapshots as reverb effects in the <code>FMOD/Reverbs</code> folder.</p>
 <p><img alt="Reverb assets" src="images/reverb-assets.png" /></p>
-<p>These reverb effects can be dragged into audio volume Reverb Settings panel to be triggered when the audio listener enters the audio volume. It uses the same logic as the inbuilt Unreal audio system to determine which audio volume should be enabled, based on the priority of all the audio volumes the audio listener is within. The <a href="https://fmod.com/docs/2.02/studio/mixing.html#priority">Snapshot priority</a>, which is used to resolve conflicting property values when mutliple snapshots are active, is unrelated to audio volume priority and not a factor in determining which audio volume will be enabled. In the case of nested audio volumes you must set distinct priorities because audio volumes with the same priority may not become enabled.</p>
+<p>These reverb effects can be dragged into audio volume Reverb Settings panel to be triggered when the audio listener enters the audio volume. It uses the same logic as the inbuilt Unreal audio system to determine which audio volume should be enabled, based on the priority of all the audio volumes the audio listener is within. The <a href="https://fmod.com/docs/2.03/studio/mixing.html#priority">Snapshot priority</a>, which is used to resolve conflicting property values when mutliple snapshots are active, is unrelated to audio volume priority and not a factor in determining which audio volume will be enabled. In the case of nested audio volumes you must set distinct priorities because audio volumes with the same priority may not become enabled.</p>
 <p><img alt="Reverb settings" src="images/reverb-settings.png" /></p>
 <p>By default, snapshots apply instantly. To have a snapshot fade in, one of two things can be done. The first is by adding an AHDSR modulation to the intensity dial. The second way is to expose the intensity as a parameter, which allows it to be driven from the integration.</p>
 <p><img alt="Reverb snapshot intensity" src="images/reverb-snapshot-intensity.png" /></p>
@@ -334,7 +331,7 @@ You will need to add these parameter names to the integration settings.</p>
 <h2 id="localization"><a href="#localization">2.10 Localization</a></h2>
 <p>Localized audio tables are a special kind of audio table with features that facilitate localization. We recommend using localized audio tables if your game supports multiple spoken languages, or if you intend to add support for additional languages in a future patch.</p>
 <h3 id="setting-up-audio-tables"><a href="#setting-up-audio-tables">2.10.1 Setting up Audio Tables</a></h3>
-<p><a href="https://fmod.com/docs/2.02/api/dialogue-and-localization.html#audio-tables">Audio Tables</a> are lists of audio files stored outside your FMOD Studio project's asset folder. You can use audio tables to control localized sounds. See the <a href="https://fmod.com/docs/2.02/studio/dialogue-and-localization.html#localized-audio-tables">Dialogue and Localization</a> section of the <a href="https://fmod.com/docs/2.02/studio/welcome-to-fmod-studio.html">FMOD Studio Docs</a> on how to set up an audio table in your project.</p>
+<p><a href="https://fmod.com/docs/2.03/api/dialogue-and-localization.html#audio-tables">Audio Tables</a> are lists of audio files stored outside your FMOD Studio project's asset folder. You can use audio tables to control localized sounds. See the <a href="https://fmod.com/docs/2.03/studio/dialogue-and-localization.html#localized-audio-tables">Dialogue and Localization</a> section of the <a href="https://fmod.com/docs/2.03/studio/welcome-to-fmod-studio.html">FMOD Studio Docs</a> on how to set up an audio table in your project.</p>
 <p><img alt="Audio Table" src="images/audio-table.png" /></p>
 <h3 id="loading-localized-banks"><a href="#loading-localized-banks">2.10.2 Loading Localized Banks</a></h3>
 <p>Audio tables are assigned to an associated bank, this means that in order to change the currently loaded audio table you will need to change the bank. Only one localized bank should be loaded at a time, otherwise just the first one to be loaded will be used.</p>
@@ -353,11 +350,11 @@ You will need to add these parameter names to the integration settings.</p>
 <ul>
 <li>Delete the old FMODStudio folder then follow the same steps from <a href="user-guide.html#installing-the-integration">Installing the integration</a>.</li>
 </ul>
-<p>If you are updating to a newer <a href="glossary.html#version">minor version</a> of FMOD no additional steps are required unless specified in the <a href="https://fmod.com/docs/2.02/api/welcome-revision-history.html">revision history</a>.</p>
+<p>If you are updating to a newer <a href="glossary.html#version">minor version</a> of FMOD no additional steps are required unless specified in the <a href="https://fmod.com/docs/2.03/api/welcome-revision-history.html">revision history</a>.</p>
 <p>Upgrading to a newer <a href="glossary.html#version">major version</a> of FMOD is usually only recommend for projects at or near the beginning of development, because new major versions may  introduce behavioral and breaking changes. If you are upgrading to a new major version, you will need to read over:</p>
 <ul>
 <li><a href="welcome.html">What's new in FMOD for Unreal Integration...</a></li>
-<li><a href="https://fmod.com/docs/2.02/api/welcome.html">What's new in FMOD API...</a></li>
+<li><a href="https://fmod.com/docs/2.03/api/welcome.html">What's new in FMOD API...</a></li>
 </ul>
 <p>These will describe specific changes that might need to be made to your project.</p>
 <h3 id="updating-to-ue4-426"><a href="#updating-to-ue4-426">2.11.1 Updating to UE4 4.26</a></h3>
@@ -434,7 +431,7 @@ You will need to add these parameter names to the integration settings.</p>
 <p>For further documentation, see:<br />
 - <a href="api-reference.html">Integration API Reference</a><br />
 - <a href="blueprint-reference.html">Integration Blueprint Reference</a><br />
-- <a href="https://fmod.com/docs/2.02/api/welcome.html">FMOD API Reference</a>.</p>
+- <a href="https://fmod.com/docs/2.03/api/welcome.html">FMOD API Reference</a>.</p>
 <h2 id="programmer-sounds"><a href="#programmer-sounds">2.14 Programmer Sounds</a></h2>
 <p>FMOD Studio events can include programmer sound modules that are controlled at runtime. There are a few different ways of hooking them up.</p>
 <h3 id="programmer-sounds-via-audio-tables"><a href="#programmer-sounds-via-audio-tables">2.14.1 Programmer Sounds via Audio Tables</a></h3>
@@ -533,7 +530,7 @@ Add the Actor the level:<br />
 <div class="highlight language-cpp"><pre><span></span><span class="c1">// Fill out your copyright notice in the Description page of Project Settings.</span>
 <span class="cp">#include</span> <span class="cpf">&quot;ProgrammerExample.h&quot;</span><span class="cp"></span>
 
-<span class="n">FMOD_RESULT</span> <span class="n">F_CALLBACK</span> <span class="nf">StaticDialogueEventCallback</span><span class="p">(</span><span class="n">FMOD_STUDIO_EVENT_CALLBACK_TYPE</span> <span class="n">type</span><span class="p">,</span> <span class="n">FMOD_STUDIO_EVENTINSTANCE</span><span class="o">*</span> <span class="n">event</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">parameters</span><span class="p">);</span>
+<span class="n">FMOD_RESULT</span> <span class="n">F_CALL</span> <span class="nf">StaticDialogueEventCallback</span><span class="p">(</span><span class="n">FMOD_STUDIO_EVENT_CALLBACK_TYPE</span> <span class="n">type</span><span class="p">,</span> <span class="n">FMOD_STUDIO_EVENTINSTANCE</span><span class="o">*</span> <span class="n">event</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">parameters</span><span class="p">);</span>
 
 <span class="n">AProgrammerExample</span><span class="o">::</span><span class="n">AProgrammerExample</span><span class="p">()</span>
 <span class="p">{</span>
@@ -557,7 +554,7 @@ Add the Actor the level:<br />
     <span class="n">dialogueInstance</span><span class="o">-&gt;</span><span class="n">release</span><span class="p">();</span>
 <span class="p">}</span>
 
-<span class="n">FMOD_RESULT</span> <span class="n">F_CALLBACK</span> <span class="n">StaticDialogueEventCallback</span><span class="p">(</span><span class="n">FMOD_STUDIO_EVENT_CALLBACK_TYPE</span> <span class="n">type</span><span class="p">,</span> <span class="n">FMOD_STUDIO_EVENTINSTANCE</span><span class="o">*</span> <span class="n">event</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">parameters</span><span class="p">)</span>
+<span class="n">FMOD_RESULT</span> <span class="n">F_CALL</span> <span class="n">StaticDialogueEventCallback</span><span class="p">(</span><span class="n">FMOD_STUDIO_EVENT_CALLBACK_TYPE</span> <span class="n">type</span><span class="p">,</span> <span class="n">FMOD_STUDIO_EVENTINSTANCE</span><span class="o">*</span> <span class="n">event</span><span class="p">,</span> <span class="kt">void</span><span class="o">*</span> <span class="n">parameters</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="c1">// Retrieving the instance</span>
     <span class="n">FMOD</span><span class="o">::</span><span class="n">Studio</span><span class="o">::</span><span class="n">EventInstance</span><span class="o">*</span> <span class="n">instance</span> <span class="o">=</span> <span class="p">(</span><span class="n">FMOD</span><span class="o">::</span><span class="n">Studio</span><span class="o">::</span><span class="n">EventInstance</span><span class="o">*</span><span class="p">)</span><span class="n">event</span><span class="p">;</span>
@@ -732,7 +729,7 @@ AudioMixerModuleName=
 </ul>
 <p>This can be especially useful for build machines that don't normally run the Editor at all, which is what normally triggers the assets to be built, and does not require the generated assets to be checked in to source control.</p></div>
 
-<p class="manual-footer">Unreal Integration 2.02.26 (2024-12-18). &copy; 2024 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.03.07 (2025-04-01). &copy; 2025 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 

@@ -1,4 +1,4 @@
-// Copyright (c), Firelight Technologies Pty, Ltd. 2024-2024.
+// Copyright (c), Firelight Technologies Pty, Ltd. 2025-2025.
 
 #include "FMODAudioLinkInputClient.h"
 #include "FMODAudioLinkLog.h"
@@ -98,7 +98,7 @@ FFMODAudioLinkInputClient::~FFMODAudioLinkInputClient()
     Unregister();
 }
 
-FMOD_RESULT F_CALLBACK pcmreadcallback(FMOD_SOUND* inSound, void* data, unsigned int datalen)
+FMOD_RESULT F_CALL pcmreadcallback(FMOD_SOUND* inSound, void* data, unsigned int datalen)
 {
     FMOD::Sound* sound = (FMOD::Sound*)inSound;
     FFMODAudioLinkInputClient* ConsumerSP;
@@ -109,7 +109,7 @@ FMOD_RESULT F_CALLBACK pcmreadcallback(FMOD_SOUND* inSound, void* data, unsigned
     return FMOD_OK;
 }
 
-FMOD_RESULT F_CALLBACK SoundCallback(FMOD_STUDIO_EVENT_CALLBACK_TYPE type, FMOD_STUDIO_EVENTINSTANCE* event, void* parameters)
+FMOD_RESULT F_CALL SoundCallback(FMOD_STUDIO_EVENT_CALLBACK_TYPE type, FMOD_STUDIO_EVENTINSTANCE* event, void* parameters)
 {
     FMOD_RESULT result = FMOD_OK;
     FMOD::Studio::EventInstance* eventInstance = (FMOD::Studio::EventInstance*)event;
@@ -203,7 +203,20 @@ void FFMODAudioLinkInputClient::Start(USceneComponent* InComponent)
                     InputClientRef* callbackMemory = new InputClientRef(SelfSP);
 
                     EventInst->setUserData(callbackMemory);
-                    EventInst->start();
+
+                    bool bIs3d = 0;
+                    EventDesc->is3D(&bIs3d);
+                    if (bIs3d)
+                    {
+                        // delay start
+                        SelfSP->bShouldDelayStart = true;
+                        UE_LOG(LogFMODAudioLink, Verbose, TEXT("FFMODAudioLinkInputClient::Start: Delaying start of 3D EventInstance."));
+                    }
+                    else
+                    {
+                        SelfSP->bShouldDelayStart = false;
+                        EventInst->start();
+                    }
                 }
             }
         };
@@ -241,6 +254,12 @@ void FFMODAudioLinkInputClient::UpdateWorldState(const FWorldState& InParams)
         // TODO: velocity
 
         EventInstance->set3DAttributes(&attr);
+        if (bShouldDelayStart)
+        {
+            EventInstance->start();
+            UE_LOG(LogFMODAudioLink, Verbose, TEXT("FFMODAudioLinkInputClient::UpdateWorldState: Starting EventInstance."));
+            bShouldDelayStart = false;
+        }
     }
 }
 

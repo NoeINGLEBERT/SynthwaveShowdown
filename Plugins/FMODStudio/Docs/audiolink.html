@@ -7,7 +7,7 @@
 <body>
 <div class="docs-body">
 <div class="manual-toc">
-<p>Unreal Integration 2.02</p>
+<p>Unreal Integration 2.03</p>
 <ul>
 <li><a href="welcome.html">Welcome to FMOD for Unreal</a></li>
 <li><a href="user-guide.html">User Guide</a></li>
@@ -40,7 +40,7 @@
 <p><a href="https://docs.unrealengine.com/en-US/audiolink/">AudioLink</a> is an API that connects Unreal Audio Engine to external software, allowing Audio to be passed from Unreal to FMOD. By using hardware abstraction, AudioLink bypasses the need for direct hardware access and provides the strengths of both Unreal Audio Engine and FMOD.</p>
 <p>This section will assume a basic understanding of the Unreal AudioLink system and will focus on the FMOD specific information.</p>
 <h3 id="linking-with-your-studio-project"><a href="#linking-with-your-studio-project">10.0.1 Linking with your Studio Project</a></h3>
-<p>The FMOD for Unreal AudioLink module assumes the Event linked contains a <a href="https://fmod.com/docs/2.02/studio/instrument-reference.html#programmer-instrument">Programmer Instrument</a>, this is what it uses to pass the sound data from Unreal to FMOD.</p>
+<p>The FMOD for Unreal AudioLink module assumes the Event linked contains a <a href="https://fmod.com/docs/2.03/studio/instrument-reference.html#programmer-instrument">Programmer Instrument</a>, this is what it uses to pass the sound data from Unreal to FMOD.</p>
 <p><img alt="Programmer sound event" src="images/audiolink-programmer-sound.png" /><br />
 <em>Generally you will want an Event that has a looping async programmer sound, because we may not know the length of the sounds being played from Unreal (ie. submixes are generally alive from startup to shutdown).</em></p>
 <h3 id="how-to-enabledisable-fmod-audiolink"><a href="#how-to-enabledisable-fmod-audiolink">10.0.2 How to Enable/Disable FMOD AudioLink</a></h3>
@@ -129,7 +129,7 @@ Create a new FMODAudioLinkSettings asset and leave the <code>Link Event</code> e
 <li>FMOD Studio Profiler can now be used to track and manage events using Live Update.</li>
 </ul></div>
 
-<p class="manual-footer">Unreal Integration 2.02.26 (2024-12-18). &copy; 2024 Firelight Technologies Pty Ltd.</p>
+<p class="manual-footer">Unreal Integration 2.03.07 (2025-04-01). &copy; 2025 Firelight Technologies Pty Ltd.</p>
 </body>
 </html>
 
