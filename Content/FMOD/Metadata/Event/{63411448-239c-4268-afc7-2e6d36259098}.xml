@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{63411448-239c-4268-afc7-2e6d36259098}">
 		<property name="name">
-			<value>Synthw_RUNRUN</value>
+			<value>RhythmTrack_Synthwave_01_RunRun</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>

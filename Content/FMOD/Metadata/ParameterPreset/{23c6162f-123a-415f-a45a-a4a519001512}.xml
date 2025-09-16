@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{23c6162f-123a-415f-a45a-a4a519001512}">
+		<property name="name">
+			<value>move_is_onbeat</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a8470aa6-48ef-4cd2-a7f0-c0ed2c1bb935}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{60b96343-27c7-4ee8-9213-3fe44b38f3db}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{60b96343-27c7-4ee8-9213-3fe44b38f3db}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

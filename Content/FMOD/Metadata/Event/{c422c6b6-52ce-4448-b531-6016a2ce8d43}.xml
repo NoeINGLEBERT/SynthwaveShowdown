@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{c422c6b6-52ce-4448-b531-6016a2ce8d43}">
 		<property name="name">
-			<value>ElectrSw_WORLDWIDE</value>
+			<value>RhythmTrack_ElectroSwing_01_WorldWide</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
