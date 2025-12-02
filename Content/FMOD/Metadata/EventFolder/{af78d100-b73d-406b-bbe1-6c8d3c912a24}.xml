@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{af78d100-b73d-406b-bbe1-6c8d3c912a24}">
+		<property name="name">
+			<value>SK01 Divine Rays</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c59dfb8e-1b6b-4d96-aefe-ba25ec86cab8}</destination>
+		</relationship>
+	</object>
+</objects>

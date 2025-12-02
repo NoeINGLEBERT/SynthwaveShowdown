@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{0fce2b75-f991-4a54-8367-1a3f33dffc0a}">
+		<property name="assetPath">
+			<value>Footsteps_Hollow_Metal_Tip_35.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.50621875000000005</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{00afbdff-3ab2-4355-8a4d-2cbd10153bf9}</destination>
+		</relationship>
+	</object>
+</objects>

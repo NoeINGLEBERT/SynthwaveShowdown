@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{0eca24b7-b6c5-487f-be40-3b9d59bfe098}">
+		<property name="name">
+			<value>SK04 Overdrive (PASSIVE)</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ce532337-e0fe-474e-9669-739ee28dc21e}</destination>
+		</relationship>
+	</object>
+</objects>

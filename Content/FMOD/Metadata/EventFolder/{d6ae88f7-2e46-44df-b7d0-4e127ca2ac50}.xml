@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{d6ae88f7-2e46-44df-b7d0-4e127ca2ac50}">
+		<property name="name">
+			<value>SK02 Condamnation</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8331f15c-beb6-4ba9-928a-65782874d3ef}</destination>
+		</relationship>
+	</object>
+</objects>

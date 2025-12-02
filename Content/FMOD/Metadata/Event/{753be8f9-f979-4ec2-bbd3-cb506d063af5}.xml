@@ -51,7 +51,7 @@
 			<destination>{462411fc-9f22-493a-ab81-b8d775b89149}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{6b9d1458-6ef3-4fb1-97ab-11c949efbfe0}</destination>
+			<destination>{28989bd7-4f41-4d8f-94c6-8b70e3ce83bd}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7ff62f27-b787-409c-a7c0-1d1f5e4cbee2}" />
@@ -118,7 +118,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -136,7 +135,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -154,7 +152,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -172,7 +169,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -190,7 +186,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -208,7 +203,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -226,7 +220,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -244,7 +237,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -262,7 +254,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -280,7 +271,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>
@@ -298,7 +288,6 @@
 		<property name="length">
 			<value>0.46154166666666674</value>
 		</property>
-		<property name="name" />
 		<property name="commandType">
 			<value>3</value>
 		</property>

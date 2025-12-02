@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{d3b0fa09-3203-476d-97ec-1d1d733e1b54}">
+		<property name="name">
+			<value>c - Holo Wall</value>
+		</property>
+		<relationship name="folder">
+			<destination>{681c9460-4a1a-4ba2-85ea-082112d2958c}</destination>
+		</relationship>
+	</object>
+</objects>

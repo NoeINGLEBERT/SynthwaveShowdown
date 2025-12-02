@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{83859680-bd92-4db0-8732-6fabc822463a}">
+		<property name="name">
+			<value>SK04 AeroSwing (PASSIVE)</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6984bd92-3404-41ba-b81c-aa8213d3f2d7}</destination>
+		</relationship>
+	</object>
+</objects>
