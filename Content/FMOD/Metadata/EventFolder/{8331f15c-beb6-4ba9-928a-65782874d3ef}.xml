@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{8331f15c-beb6-4ba9-928a-65782874d3ef}">
+		<property name="name">
+			<value>Karkass</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c4a296bc-a65d-44d1-8b90-0e42cc02d5c9}</destination>
+		</relationship>
+	</object>
+</objects>

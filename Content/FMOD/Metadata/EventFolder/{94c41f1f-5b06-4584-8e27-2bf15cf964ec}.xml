@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{94c41f1f-5b06-4584-8e27-2bf15cf964ec}">
+		<property name="name">
+			<value>SK01 Thrash &amp; Slash</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8331f15c-beb6-4ba9-928a-65782874d3ef}</destination>
+		</relationship>
+	</object>
+</objects>

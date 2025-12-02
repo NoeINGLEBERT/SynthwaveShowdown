@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{cef0a2fd-5ab6-4606-9f63-7615bce06ca8}">
+		<property name="name">
+			<value>SK03 Consecration (ULT)</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c59dfb8e-1b6b-4d96-aefe-ba25ec86cab8}</destination>
+		</relationship>
+	</object>
+</objects>

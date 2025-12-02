@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="EventFolder" id="{de37d883-3657-4680-a40b-e30ed14e0b4b}">
+		<property name="name">
+			<value>SK03 Purgatory (ULT)</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8331f15c-beb6-4ba9-928a-65782874d3ef}</destination>
+		</relationship>
+	</object>
+</objects>
