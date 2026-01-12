@@ -170,7 +170,11 @@
 			<destination>{483586ab-f3eb-4c74-9603-518ab339b249}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{98ec0e70-a208-4f65-9a0d-7e3fe36b494f}" />
+	<object class="MixerBusPanner" id="{98ec0e70-a208-4f65-9a0d-7e3fe36b494f}">
+		<property name="surroundPanExtent">
+			<value>270</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{08536d64-4e80-4d20-9166-a66f0f91fc94}" />
 	<object class="FadeCurve" id="{485e8499-3da9-4c4e-a6a2-3b96bf2f712c}">
 		<relationship name="startPoint">

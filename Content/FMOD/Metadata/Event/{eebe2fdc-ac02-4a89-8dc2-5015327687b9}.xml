@@ -5,7 +5,7 @@
 			<value>UI_GameFound</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ce9fd78e-d4cf-451d-bd99-b2f6ce949c22}</destination>
@@ -60,6 +60,9 @@
 	<object class="EventAutomatableProperties" id="{07278cf0-cbae-4ed9-8090-f5d9a3f88ea0}" />
 	<object class="MarkerTrack" id="{a64f1927-57a3-4696-83a3-af8e5c7de271}" />
 	<object class="GroupTrack" id="{289997c9-ec24-4cc9-afe9-7cbf6092193b}">
+		<relationship name="modules">
+			<destination>{4f85306a-a9d0-4ae8-8938-93d24d2daa4e}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{93ece78b-6c59-428b-8726-b9a6aa750a11}</destination>
 		</relationship>
@@ -75,6 +78,7 @@
 	<object class="Timeline" id="{a5ac0188-44de-40d4-84ea-373d55f00e6a}">
 		<relationship name="modules">
 			<destination>{be05481a-3a97-4a32-97cb-7eba0754f46e}</destination>
+			<destination>{4f85306a-a9d0-4ae8-8938-93d24d2daa4e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{bfae065f-3418-428f-9869-3b2d72aad180}">
@@ -94,6 +98,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{35f8296c-7e32-43fb-b61e-ec03589926d1}" />
+	<object class="SingleSound" id="{4f85306a-a9d0-4ae8-8938-93d24d2daa4e}">
+		<property name="start">
+			<value>0.013530596606458674</value>
+		</property>
+		<property name="length">
+			<value>0.5</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{b15d51f0-6c8e-4ddc-a7ae-c94a2d2b3e28}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{93ece78b-6c59-428b-8726-b9a6aa750a11}">
 		<property name="name">
 			<value>Audio 1</value>
@@ -110,7 +125,7 @@
 	</object>
 	<object class="SingleSound" id="{be05481a-3a97-4a32-97cb-7eba0754f46e}">
 		<property name="length">
-			<value>0.89566666666666672</value>
+			<value>0.72750739032503842</value>
 		</property>
 		<property name="volume">
 			<value>-11.5</value>
@@ -123,6 +138,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{64992013-7f9e-4080-8421-507632361ae4}">
+		<property name="volume">
+			<value>-9.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -167,7 +185,7 @@
 			<value>26</value>
 		</property>
 		<property name="highCut">
-			<value>500</value>
+			<value>300</value>
 		</property>
 		<property name="earlyLateMix">
 			<value>66</value>

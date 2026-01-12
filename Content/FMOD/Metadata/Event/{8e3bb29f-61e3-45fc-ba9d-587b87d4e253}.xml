@@ -59,6 +59,9 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7bad9b4f-9530-470a-aa29-21663934e604}">
+		<property name="minimumDistance">
+			<value>5</value>
+		</property>
 		<property name="maximumDistance">
 			<value>80</value>
 		</property>
@@ -193,7 +196,11 @@
 			<destination>{28e18233-4093-4595-812e-d33aa11e3fdd}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{d3ba0a13-2270-4357-abf3-1a3a39d906f4}" />
+	<object class="MixerBusPanner" id="{d3ba0a13-2270-4357-abf3-1a3a39d906f4}">
+		<property name="surroundPanExtent">
+			<value>270</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{1f23a164-598c-4718-bfff-4bd81cad16a6}" />
 	<object class="MixerBusEffectChain" id="{7616627d-2862-4ca4-abe9-25146679821f}">
 		<relationship name="effects">

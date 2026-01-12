@@ -291,7 +291,11 @@
 			<destination>{a70a6b97-e186-459a-a98b-a585c5db8221}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{d234d3fb-2bc2-4d25-bec4-db33a38c3659}" />
+	<object class="MixerBusPanner" id="{d234d3fb-2bc2-4d25-bec4-db33a38c3659}">
+		<property name="surroundPanExtent">
+			<value>270</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{5483a694-9765-4b35-972f-88b7d9c89f87}" />
 	<object class="MixerBusEffectChain" id="{ec420fcd-8db1-42f8-aeab-e0039b8e9cf3}">
 		<relationship name="effects">

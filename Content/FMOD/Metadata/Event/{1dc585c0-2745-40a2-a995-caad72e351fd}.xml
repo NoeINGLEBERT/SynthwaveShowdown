@@ -64,7 +64,7 @@
 	<object class="MarkerTrack" id="{809857d8-2afd-48d1-9833-0eb306a2a48d}" />
 	<object class="GroupTrack" id="{84f04bc9-7fdd-47db-b78d-1aee892c9330}">
 		<relationship name="modules">
-			<destination>{d8fde265-82a2-4d15-8c65-c3f295f33636}</destination>
+			<destination>{2953d9a9-51a6-42a6-9703-715ce7232dd8}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{1b14a7fe-e627-4f0d-a16d-d856ae6a0489}</destination>
@@ -72,7 +72,7 @@
 	</object>
 	<object class="Timeline" id="{6904f28e-17ca-4660-a527-dea6d469379c}">
 		<relationship name="modules">
-			<destination>{d8fde265-82a2-4d15-8c65-c3f295f33636}</destination>
+			<destination>{2953d9a9-51a6-42a6-9703-715ce7232dd8}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{dc2da4c6-b294-44aa-b9cc-a6a8ae0e73d3}">
@@ -92,12 +92,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d87575c1-54de-4f69-850f-a82dbb2ec4ea}" />
-	<object class="SingleSound" id="{d8fde265-82a2-4d15-8c65-c3f295f33636}">
+	<object class="SingleSound" id="{2953d9a9-51a6-42a6-9703-715ce7232dd8}">
 		<property name="length">
-			<value>0.47997916666666668</value>
+			<value>1.75</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{04b70b60-e434-4c2d-a8d0-c5c07abab91f}</destination>
+			<destination>{3eebb5a0-75dc-4abb-9733-af62617ff670}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{1b14a7fe-e627-4f0d-a16d-d856ae6a0489}">
@@ -120,7 +120,11 @@
 			<destination>{1308ec3e-66fb-4a47-87da-0001b3e6b14f}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{c983dca0-f3bc-4d5e-93dc-229d8a249ca3}" />
+	<object class="MixerBusPanner" id="{c983dca0-f3bc-4d5e-93dc-229d8a249ca3}">
+		<property name="surroundPanExtent">
+			<value>270</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{20595970-97d0-417a-aed4-989a01287f24}" />
 	<object class="MixerBusEffectChain" id="{7b81c1bd-43e5-4631-980e-4d1c33b4df95}">
 		<relationship name="effects">

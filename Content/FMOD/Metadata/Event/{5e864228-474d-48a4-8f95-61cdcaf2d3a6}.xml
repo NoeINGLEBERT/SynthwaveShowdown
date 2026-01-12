@@ -5,7 +5,7 @@
 			<value>UI_GameQuit</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ce9fd78e-d4cf-451d-bd99-b2f6ce949c22}</destination>
@@ -60,7 +60,7 @@
 	<object class="MarkerTrack" id="{743486ff-5bc2-4cb6-971f-ecd0b8c343bc}" />
 	<object class="GroupTrack" id="{c246438b-84fa-4d46-9dad-7de009dc1a6b}">
 		<relationship name="modules">
-			<destination>{02d311ba-1541-46f7-86bd-a8a2c5bb654b}</destination>
+			<destination>{aec7f7c7-c81b-4b0e-8b85-222fe2817e34}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0d5c2c1a-c6f8-4f25-a1f6-cf30053e6f0a}</destination>
@@ -68,7 +68,7 @@
 	</object>
 	<object class="Timeline" id="{7671f962-840f-457c-a33d-e47316ac4cd4}">
 		<relationship name="modules">
-			<destination>{02d311ba-1541-46f7-86bd-a8a2c5bb654b}</destination>
+			<destination>{aec7f7c7-c81b-4b0e-8b85-222fe2817e34}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{1b151c62-cbb7-4b40-b31b-b37d5f189c39}">
@@ -88,15 +88,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c3d9050b-2fff-4d3e-a5c2-1d63e50257aa}" />
-	<object class="SingleSound" id="{02d311ba-1541-46f7-86bd-a8a2c5bb654b}">
+	<object class="SingleSound" id="{aec7f7c7-c81b-4b0e-8b85-222fe2817e34}">
 		<property name="length">
-			<value>0.89566666666666672</value>
-		</property>
-		<property name="volume">
-			<value>-12</value>
+			<value>0.5</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{83cb97be-c1a1-421c-af14-3c0ebc22e91c}</destination>
+			<destination>{ab353229-3c5a-404b-9473-a2689d1826d4}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0d5c2c1a-c6f8-4f25-a1f6-cf30053e6f0a}">

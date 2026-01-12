@@ -164,7 +164,11 @@
 			<destination>{46fcbdde-5fba-4959-9df0-d383136eec80}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{590b3eaf-26d7-4332-a89e-350a83a9c73d}" />
+	<object class="MixerBusPanner" id="{590b3eaf-26d7-4332-a89e-350a83a9c73d}">
+		<property name="surroundPanExtent">
+			<value>270</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{7ad517f2-6314-4296-b62b-c403cdc34148}" />
 	<object class="RandomizerModulator" id="{939057de-351f-41ba-bb1b-3aa04cf84772}">
 		<property name="nameOfPropertyBeingModulated">

@@ -59,15 +59,11 @@
 	<object class="MarkerTrack" id="{d8a46e13-334e-4c69-bec0-92c7c94be972}" />
 	<object class="GroupTrack" id="{bb69192f-657e-400f-aef5-391e083d5115}">
 		<relationship name="modules">
-			<destination>{95847f31-d199-454d-be4e-2f6ffd76767c}</destination>
 			<destination>{49f5bccb-c68a-4eca-8dbe-0ca9c6e7a600}</destination>
 			<destination>{3f971d56-4b65-4b84-9dd3-81bc0e595a78}</destination>
-			<destination>{399de7ab-0c1b-4c83-a0f4-aba79e2a7a7e}</destination>
 			<destination>{7e922646-4f63-44ab-96cf-99a85014c499}</destination>
-			<destination>{556f0bd8-7d1a-4a10-b6de-e3309a40373c}</destination>
 			<destination>{ade61895-a8f0-461e-9f6f-4ab01b7a65c3}</destination>
 			<destination>{ef01ae27-bbac-4ce8-beaf-493a8e042aa5}</destination>
-			<destination>{f89879d8-1da2-4ac6-8185-c2414418ce4a}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d1f48b37-6a62-436c-98f9-3401085a68b2}</destination>
@@ -75,15 +71,11 @@
 	</object>
 	<object class="Timeline" id="{2da36a02-6a36-4c33-86c1-9f64867fafab}">
 		<relationship name="modules">
-			<destination>{95847f31-d199-454d-be4e-2f6ffd76767c}</destination>
 			<destination>{49f5bccb-c68a-4eca-8dbe-0ca9c6e7a600}</destination>
 			<destination>{3f971d56-4b65-4b84-9dd3-81bc0e595a78}</destination>
-			<destination>{399de7ab-0c1b-4c83-a0f4-aba79e2a7a7e}</destination>
 			<destination>{7e922646-4f63-44ab-96cf-99a85014c499}</destination>
-			<destination>{556f0bd8-7d1a-4a10-b6de-e3309a40373c}</destination>
 			<destination>{ade61895-a8f0-461e-9f6f-4ab01b7a65c3}</destination>
 			<destination>{ef01ae27-bbac-4ce8-beaf-493a8e042aa5}</destination>
-			<destination>{f89879d8-1da2-4ac6-8185-c2414418ce4a}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{aaedaf31-7adc-4cb3-ace0-e568d9ff1dcc}</destination>
@@ -107,23 +99,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7d548fc6-5437-4ef9-8213-1e5c8968e097}" />
-	<object class="CommandSound" id="{95847f31-d199-454d-be4e-2f6ffd76767c}">
-		<property name="start">
-			<value>7.3846249999999998</value>
-		</property>
-		<property name="length">
-			<value>0.92306250000000034</value>
-		</property>
-		<property name="commandType">
-			<value>3</value>
-		</property>
-		<property name="targetValue">
-			<value>1</value>
-		</property>
-		<relationship name="commandTarget">
-			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
-		</relationship>
-	</object>
 	<object class="CommandSound" id="{49f5bccb-c68a-4eca-8dbe-0ca9c6e7a600}">
 		<property name="start">
 			<value>12.923083333333333</value>
@@ -158,43 +133,9 @@
 			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
 		</relationship>
 	</object>
-	<object class="CommandSound" id="{399de7ab-0c1b-4c83-a0f4-aba79e2a7a7e}">
-		<property name="start">
-			<value>8.7692291666666673</value>
-		</property>
-		<property name="length">
-			<value>0.92306250000000034</value>
-		</property>
-		<property name="commandType">
-			<value>3</value>
-		</property>
-		<property name="targetValue">
-			<value>1</value>
-		</property>
-		<relationship name="commandTarget">
-			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
-		</relationship>
-	</object>
 	<object class="CommandSound" id="{7e922646-4f63-44ab-96cf-99a85014c499}">
 		<property name="start">
 			<value>13.615375</value>
-		</property>
-		<property name="length">
-			<value>0.92306250000000034</value>
-		</property>
-		<property name="commandType">
-			<value>3</value>
-		</property>
-		<property name="targetValue">
-			<value>1</value>
-		</property>
-		<relationship name="commandTarget">
-			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
-		</relationship>
-	</object>
-	<object class="CommandSound" id="{556f0bd8-7d1a-4a10-b6de-e3309a40373c}">
-		<property name="start">
-			<value>10.615354166666668</value>
 		</property>
 		<property name="length">
 			<value>0.92306250000000034</value>
@@ -229,23 +170,6 @@
 	<object class="CommandSound" id="{ef01ae27-bbac-4ce8-beaf-493a8e042aa5}">
 		<property name="start">
 			<value>11.999937500000001</value>
-		</property>
-		<property name="length">
-			<value>0.92306250000000034</value>
-		</property>
-		<property name="commandType">
-			<value>3</value>
-		</property>
-		<property name="targetValue">
-			<value>1</value>
-		</property>
-		<relationship name="commandTarget">
-			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
-		</relationship>
-	</object>
-	<object class="CommandSound" id="{f89879d8-1da2-4ac6-8185-c2414418ce4a}">
-		<property name="start">
-			<value>12.461541666666667</value>
 		</property>
 		<property name="length">
 			<value>0.92306250000000034</value>

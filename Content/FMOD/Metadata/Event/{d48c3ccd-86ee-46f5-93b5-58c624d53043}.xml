@@ -134,7 +134,7 @@
 			<value>3</value>
 		</property>
 		<property name="targetValue">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="commandTarget">
 			<destination>{ca7082c5-1c87-4ffd-b8b9-dc72c48f8357}</destination>

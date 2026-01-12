@@ -5,7 +5,7 @@
 			<value>UI_GameSearch_Loop</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ce9fd78e-d4cf-451d-bd99-b2f6ce949c22}</destination>
@@ -60,7 +60,7 @@
 	<object class="MarkerTrack" id="{4d8c2699-ac76-47c6-8759-f55a0ca11aad}" />
 	<object class="GroupTrack" id="{8fdcdde0-d10d-4872-8b6d-53e2d6f2d92f}">
 		<relationship name="modules">
-			<destination>{a2f0096e-08d2-4690-90bd-6eede64d526d}</destination>
+			<destination>{d249408b-f9dc-43e5-9104-d282440a83b3}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a31e7c57-d32d-4797-ad59-952d096dbd3c}</destination>
@@ -68,10 +68,7 @@
 	</object>
 	<object class="Timeline" id="{261da1c1-ec57-4b31-b4df-a209521c3852}">
 		<relationship name="modules">
-			<destination>{a2f0096e-08d2-4690-90bd-6eede64d526d}</destination>
-		</relationship>
-		<relationship name="markers">
-			<destination>{2e7ca56e-daa4-4215-9034-66a4f87dbaf4}</destination>
+			<destination>{d249408b-f9dc-43e5-9104-d282440a83b3}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{9163f2fd-ece1-4dd2-abf7-05fbc65a751f}">
@@ -91,21 +88,20 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{a3159fe6-40aa-4533-bcab-daf4a796ce9f}" />
-	<object class="SingleSound" id="{a2f0096e-08d2-4690-90bd-6eede64d526d}">
+	<object class="SingleSound" id="{d249408b-f9dc-43e5-9104-d282440a83b3}">
 		<property name="length">
-			<value>0.0625</value>
+			<value>2</value>
 		</property>
-		<property name="name" />
-		<property name="volume">
-			<value>-13</value>
+		<property name="pitch">
+			<value>-24</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{6ac97ac0-1c1c-4bf2-978a-e4b65a1df0d9}</destination>
+			<destination>{52b627ad-99b2-4760-94c1-cff94a6dab5f}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a31e7c57-d32d-4797-ad59-952d096dbd3c}">
 		<property name="volume">
-			<value>-5</value>
+			<value>-21</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -120,20 +116,6 @@
 			<destination>{9163f2fd-ece1-4dd2-abf7-05fbc65a751f}</destination>
 		</relationship>
 	</object>
-	<object class="LoopRegion" id="{2e7ca56e-daa4-4215-9034-66a4f87dbaf4}">
-		<property name="position">
-			<value>0</value>
-		</property>
-		<property name="length">
-			<value>4</value>
-		</property>
-		<relationship name="timeline">
-			<destination>{261da1c1-ec57-4b31-b4df-a209521c3852}</destination>
-		</relationship>
-		<relationship name="markerTrack">
-			<destination>{4d8c2699-ac76-47c6-8759-f55a0ca11aad}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{3411f597-2846-4014-88a8-2e9325b12e7e}">
 		<relationship name="effects">
 			<destination>{b503e6d6-a3d7-4ee3-afe4-a11501d71e45}</destination>
@@ -144,33 +126,12 @@
 	<object class="MixerBusEffectChain" id="{be81a9ab-c458-4666-a0a0-b4e2c89e244f}">
 		<relationship name="effects">
 			<destination>{c677436b-8d71-41b1-9164-82e764b442c8}</destination>
-			<destination>{063e3640-3e40-4fdc-87fa-b43020893437}</destination>
-			<destination>{9f355aa4-0f21-48b7-ab72-f156f37dbe41}</destination>
 			<destination>{85090973-3223-4474-88fe-6a38808340a3}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{8765a9c0-50fa-4580-a36b-e691836d33a9}" />
 	<object class="MixerBusFader" id="{b503e6d6-a3d7-4ee3-afe4-a11501d71e45}" />
 	<object class="MixerBusFader" id="{c677436b-8d71-41b1-9164-82e764b442c8}" />
-	<object class="DelayEffect" id="{063e3640-3e40-4fdc-87fa-b43020893437}">
-		<property name="feedback">
-			<value>68</value>
-		</property>
-		<property name="level">
-			<value>-6.5</value>
-		</property>
-	</object>
-	<object class="DelayEffect" id="{9f355aa4-0f21-48b7-ab72-f156f37dbe41}">
-		<property name="delay">
-			<value>125</value>
-		</property>
-		<property name="feedback">
-			<value>66.5</value>
-		</property>
-		<property name="level">
-			<value>-11.5</value>
-		</property>
-	</object>
 	<object class="SFXReverbEffect" id="{85090973-3223-4474-88fe-6a38808340a3}">
 		<property name="decayTime">
 			<value>2300</value>
