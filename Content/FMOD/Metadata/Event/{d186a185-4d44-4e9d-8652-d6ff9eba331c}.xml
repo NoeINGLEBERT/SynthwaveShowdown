@@ -61,6 +61,8 @@
 		<relationship name="modules">
 			<destination>{037501cf-ca31-4040-828a-12aa989c2ce9}</destination>
 			<destination>{4c37dc3c-7200-4d80-8ce1-2d0e2edb3ff9}</destination>
+			<destination>{fe20ce65-eb09-43cc-84fe-1b9a3254c41a}</destination>
+			<destination>{ef45c9f7-47fe-4567-9ff8-d363ae1d1d59}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{7b764274-7975-48e4-9bcc-b07cc388c9af}</destination>
@@ -70,6 +72,8 @@
 		<relationship name="modules">
 			<destination>{037501cf-ca31-4040-828a-12aa989c2ce9}</destination>
 			<destination>{4c37dc3c-7200-4d80-8ce1-2d0e2edb3ff9}</destination>
+			<destination>{fe20ce65-eb09-43cc-84fe-1b9a3254c41a}</destination>
+			<destination>{ef45c9f7-47fe-4567-9ff8-d363ae1d1d59}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{b396cbf4-7dda-4b0d-8119-03e712c7746d}</destination>
@@ -113,6 +117,40 @@
 	<object class="CommandSound" id="{4c37dc3c-7200-4d80-8ce1-2d0e2edb3ff9}">
 		<property name="start">
 			<value>4.7999999999999998</value>
+		</property>
+		<property name="length">
+			<value>0.40000000000000036</value>
+		</property>
+		<property name="commandType">
+			<value>3</value>
+		</property>
+		<property name="targetValue">
+			<value>1</value>
+		</property>
+		<relationship name="commandTarget">
+			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
+		</relationship>
+	</object>
+	<object class="CommandSound" id="{fe20ce65-eb09-43cc-84fe-1b9a3254c41a}">
+		<property name="start">
+			<value>5.5999999999999996</value>
+		</property>
+		<property name="length">
+			<value>0.40000000000000036</value>
+		</property>
+		<property name="commandType">
+			<value>3</value>
+		</property>
+		<property name="targetValue">
+			<value>1</value>
+		</property>
+		<relationship name="commandTarget">
+			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
+		</relationship>
+	</object>
+	<object class="CommandSound" id="{ef45c9f7-47fe-4567-9ff8-d363ae1d1d59}">
+		<property name="start">
+			<value>4</value>
 		</property>
 		<property name="length">
 			<value>0.40000000000000036</value>

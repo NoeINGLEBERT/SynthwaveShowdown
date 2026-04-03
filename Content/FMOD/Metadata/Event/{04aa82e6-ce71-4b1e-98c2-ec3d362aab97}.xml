@@ -64,6 +64,8 @@
 			<destination>{208f20d3-b01b-44f6-8338-167484eaf89e}</destination>
 			<destination>{c63b20eb-da11-4c9e-a9aa-ef50f95768c3}</destination>
 			<destination>{31944669-2ad6-4e42-9f76-f0ace5d73c99}</destination>
+			<destination>{acdce854-8276-4256-8d5a-89c36aa7b386}</destination>
+			<destination>{802f6f52-24a7-4790-9930-23e3b209c089}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{28757e84-3684-424d-a485-8ec7edb703c2}</destination>
@@ -76,6 +78,8 @@
 			<destination>{208f20d3-b01b-44f6-8338-167484eaf89e}</destination>
 			<destination>{c63b20eb-da11-4c9e-a9aa-ef50f95768c3}</destination>
 			<destination>{31944669-2ad6-4e42-9f76-f0ace5d73c99}</destination>
+			<destination>{acdce854-8276-4256-8d5a-89c36aa7b386}</destination>
+			<destination>{802f6f52-24a7-4790-9930-23e3b209c089}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{f9d50451-aeef-421e-a189-6075746f4ac2}</destination>
@@ -170,6 +174,40 @@
 	<object class="CommandSound" id="{31944669-2ad6-4e42-9f76-f0ace5d73c99}">
 		<property name="start">
 			<value>4.5999999999999996</value>
+		</property>
+		<property name="length">
+			<value>0.40000000000000036</value>
+		</property>
+		<property name="commandType">
+			<value>3</value>
+		</property>
+		<property name="targetValue">
+			<value>1</value>
+		</property>
+		<relationship name="commandTarget">
+			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
+		</relationship>
+	</object>
+	<object class="CommandSound" id="{acdce854-8276-4256-8d5a-89c36aa7b386}">
+		<property name="start">
+			<value>6</value>
+		</property>
+		<property name="length">
+			<value>0.40000000000000036</value>
+		</property>
+		<property name="commandType">
+			<value>3</value>
+		</property>
+		<property name="targetValue">
+			<value>1</value>
+		</property>
+		<relationship name="commandTarget">
+			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
+		</relationship>
+	</object>
+	<object class="CommandSound" id="{802f6f52-24a7-4790-9930-23e3b209c089}">
+		<property name="start">
+			<value>5.5999999999999996</value>
 		</property>
 		<property name="length">
 			<value>0.40000000000000036</value>

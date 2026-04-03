@@ -64,6 +64,8 @@
 			<destination>{e96676c3-ac65-499c-bb53-587afcab39f6}</destination>
 			<destination>{ce5a1fb0-9f63-4021-9bda-1d84a81bab21}</destination>
 			<destination>{7a2a9a54-9f8a-4c02-b114-25baf577c741}</destination>
+			<destination>{c9e616b1-dedc-4f55-8ad2-75a5ec2eff14}</destination>
+			<destination>{6496cebe-81e3-44fd-a972-0ff18561dce1}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{84247927-63e6-413b-89a4-620eda80f085}</destination>
@@ -76,6 +78,8 @@
 			<destination>{e96676c3-ac65-499c-bb53-587afcab39f6}</destination>
 			<destination>{ce5a1fb0-9f63-4021-9bda-1d84a81bab21}</destination>
 			<destination>{7a2a9a54-9f8a-4c02-b114-25baf577c741}</destination>
+			<destination>{c9e616b1-dedc-4f55-8ad2-75a5ec2eff14}</destination>
+			<destination>{6496cebe-81e3-44fd-a972-0ff18561dce1}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{0fdd3380-bf48-49fd-8ee7-640a54c655fa}</destination>
@@ -173,6 +177,40 @@
 		</property>
 		<property name="length">
 			<value>0.3529374999999999</value>
+		</property>
+		<property name="commandType">
+			<value>3</value>
+		</property>
+		<property name="targetValue">
+			<value>1</value>
+		</property>
+		<relationship name="commandTarget">
+			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
+		</relationship>
+	</object>
+	<object class="CommandSound" id="{c9e616b1-dedc-4f55-8ad2-75a5ec2eff14}">
+		<property name="start">
+			<value>8.3076875000000001</value>
+		</property>
+		<property name="length">
+			<value>0.46154166666666674</value>
+		</property>
+		<property name="commandType">
+			<value>3</value>
+		</property>
+		<property name="targetValue">
+			<value>1</value>
+		</property>
+		<relationship name="commandTarget">
+			<destination>{bc0ad8bc-fa01-4179-b5b7-0402a1afc1d8}</destination>
+		</relationship>
+	</object>
+	<object class="CommandSound" id="{6496cebe-81e3-44fd-a972-0ff18561dce1}">
+		<property name="start">
+			<value>13.846145833333333</value>
+		</property>
+		<property name="length">
+			<value>0.46154166666666674</value>
 		</property>
 		<property name="commandType">
 			<value>3</value>
