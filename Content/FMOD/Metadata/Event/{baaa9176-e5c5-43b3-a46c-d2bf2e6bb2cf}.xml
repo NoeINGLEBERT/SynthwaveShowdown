@@ -227,9 +227,6 @@
 		<property name="name">
 			<value>Audio 5</value>
 		</property>
-		<relationship name="automators">
-			<destination>{f8ed1b1a-ba4f-4338-970a-d70a5344c94c}</destination>
-		</relationship>
 		<relationship name="effectChain">
 			<destination>{b2a12296-d8be-44be-8184-f65df4c60c8f}</destination>
 		</relationship>
@@ -302,14 +299,6 @@
 			<value>13.5</value>
 		</property>
 	</object>
-	<object class="Automator" id="{f8ed1b1a-ba4f-4338-970a-d70a5344c94c}">
-		<property name="nameOfPropertyBeingAutomated">
-			<value>volume</value>
-		</property>
-		<relationship name="automationCurves">
-			<destination>{cec0ba42-9857-4a18-a301-81d7da881f5c}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusEffectChain" id="{b2a12296-d8be-44be-8184-f65df4c60c8f}">
 		<relationship name="effects">
 			<destination>{ba960bfa-7d71-4b86-8ef5-73cbfcdcb0d9}</destination>
@@ -321,30 +310,5 @@
 	<object class="MixerBusFader" id="{f22d2f28-0b99-4bfb-9aaf-8b634a0674a8}" />
 	<object class="MixerBusFader" id="{1fd3e10e-c11e-4790-ada5-8d7deee42895}" />
 	<object class="MixerBusFader" id="{12b520a8-3d4d-451b-a93e-53652e7163b1}" />
-	<object class="AutomationCurve" id="{cec0ba42-9857-4a18-a301-81d7da881f5c}">
-		<relationship name="parameter">
-			<destination>{60b96343-27c7-4ee8-9213-3fe44b38f3db}</destination>
-		</relationship>
-		<relationship name="automationPoints">
-			<destination>{4ecc6521-940d-4eb0-8909-a344c9c1c50f}</destination>
-			<destination>{078b43cd-f8f7-4334-b8a4-a31e268482bb}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{ba960bfa-7d71-4b86-8ef5-73cbfcdcb0d9}" />
-	<object class="AutomationPoint" id="{4ecc6521-940d-4eb0-8909-a344c9c1c50f}">
-		<property name="position">
-			<value>0</value>
-		</property>
-		<property name="value">
-			<value>-80</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{078b43cd-f8f7-4334-b8a4-a31e268482bb}">
-		<property name="position">
-			<value>1</value>
-		</property>
-		<property name="value">
-			<value>0</value>
-		</property>
-	</object>
 </objects>

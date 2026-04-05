@@ -261,6 +261,9 @@
 		</property>
 	</object>
 	<object class="SpatialiserEffect" id="{830a700b-67a8-4578-8753-0b5f51cf28b8}">
+		<property name="distanceRolloffType">
+			<value>1</value>
+		</property>
 		<property name="minimumDistance">
 			<value>5</value>
 		</property>
