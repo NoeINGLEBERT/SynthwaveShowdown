@@ -144,7 +144,10 @@ void USteamFriendUtils::AdjustSessionOpenSlots(UObject* WorldContextObject, FNam
 		return;
 	}
 
-	// Stocke la nouvelle valeur dans la propriété custom — elle survivra à UpdateSession
+	// Stocke la nouvelle valeur dans la propriété custom — elle survivra à UpdateSession.
+	// On ne touche PAS à NumOpenPublicConnections directement : le Steam OSS le gère
+	// en interne et modifier sa valeur entre en conflit avec UpdateSession, rendant
+	// la session invisible aux recherches FindSessions dans les builds packagés.
 	FOnlineSessionSettings UpdatedSettings = ExistingSession->SessionSettings;
 	UpdatedSettings.Set(Key, NewOpen, EOnlineDataAdvertisementType::ViaOnlineService);
 
