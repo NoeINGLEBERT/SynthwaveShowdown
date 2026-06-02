@@ -5,7 +5,7 @@
 			<value>SFX_Game_Overtime</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a5d4c49a-6831-4865-b19b-d7ee0eebb721}</destination>
@@ -59,18 +59,11 @@
 	<object class="EventAutomatableProperties" id="{9656770b-a8a0-4a8e-98e2-b23ce9e6027d}" />
 	<object class="MarkerTrack" id="{14f7e83b-0ec2-4e75-b603-ffc1d0f42066}" />
 	<object class="GroupTrack" id="{0a812e63-dd14-42c9-96cb-304b06f77572}">
-		<relationship name="modules">
-			<destination>{c9ae7d67-8d30-4ac8-86af-5e99e215dfac}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{90435b39-e3a7-4412-b3af-a4a87a3d4590}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{10c1702c-e019-4753-af3f-d851f43390fc}">
-		<relationship name="modules">
-			<destination>{c9ae7d67-8d30-4ac8-86af-5e99e215dfac}</destination>
-		</relationship>
-	</object>
+	<object class="Timeline" id="{10c1702c-e019-4753-af3f-d851f43390fc}" />
 	<object class="EventMixerMaster" id="{0b279f35-3197-4f3a-838d-6036f911b859}">
 		<relationship name="effectChain">
 			<destination>{7d3670fe-e198-469a-8eb6-99dd3cc25e19}</destination>
@@ -88,14 +81,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f0687379-7907-4c01-a49c-8b5412decbac}" />
-	<object class="SingleSound" id="{c9ae7d67-8d30-4ac8-86af-5e99e215dfac}">
-		<property name="length">
-			<value>1.6731875</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{b176e5a6-6987-4d35-846f-fec1f1f58fab}</destination>
-		</relationship>
-	</object>
 	<object class="EventMixerGroup" id="{90435b39-e3a7-4412-b3af-a4a87a3d4590}">
 		<property name="name">
 			<value>Audio 1</value>
