@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{3534a400-5736-4115-a84d-a4aa56825a25}">
+		<property name="name">
+			<value>skill_variant</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a8470aa6-48ef-4cd2-a7f0-c0ed2c1bb935}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{64b53d71-c417-4d7f-88d0-9fe63c6f3f71}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{64b53d71-c417-4d7f-88d0-9fe63c6f3f71}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>11</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

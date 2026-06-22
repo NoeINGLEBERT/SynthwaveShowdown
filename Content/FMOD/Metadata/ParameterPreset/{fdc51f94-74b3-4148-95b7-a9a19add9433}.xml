@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{fdc51f94-74b3-4148-95b7-a9a19add9433}">
+		<property name="name">
+			<value>ui_ult_charge</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a8470aa6-48ef-4cd2-a7f0-c0ed2c1bb935}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f73cebb6-4036-4974-b9b8-b042a379e454}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f73cebb6-4036-4974-b9b8-b042a379e454}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

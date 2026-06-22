@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="ParameterPreset" id="{25331462-42a2-4112-996b-7847bb4a999c}">
 		<property name="name">
-			<value>player_feverbar_amount</value>
+			<value>ui_feverbar_amount</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a8470aa6-48ef-4cd2-a7f0-c0ed2c1bb935}</destination>

@@ -58,6 +58,9 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{d3e1684d-72dc-47f8-bf25-a3500bf64396}">
+		<property name="minimumDistance">
+			<value>10</value>
+		</property>
 		<property name="maximumDistance">
 			<value>80</value>
 		</property>

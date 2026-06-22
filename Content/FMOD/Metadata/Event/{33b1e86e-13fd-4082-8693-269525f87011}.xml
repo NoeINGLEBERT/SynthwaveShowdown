@@ -57,8 +57,11 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{e1771cb5-d3b5-4c7f-a16b-2e8cd855a447}">
+		<property name="minimumDistance">
+			<value>8</value>
+		</property>
 		<property name="maximumDistance">
-			<value>200</value>
+			<value>100</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{8bed7449-6ce1-420e-9d18-e4dc7fa30ddb}" />
@@ -104,6 +107,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{0967dd31-4d18-4601-b304-1045527f2bcc}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>

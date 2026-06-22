@@ -58,14 +58,17 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{f310c96f-5a09-4699-8aba-75b724109680}">
+		<property name="minimumDistance">
+			<value>25</value>
+		</property>
 		<property name="maximumDistance">
-			<value>80</value>
+			<value>10000</value>
 		</property>
 	</object>
 	<object class="MarkerTrack" id="{9b5c41e1-6c6a-4162-98f3-e13bca6278f2}" />
 	<object class="GroupTrack" id="{5195b197-544e-413f-9ee7-e563c4491c17}">
 		<relationship name="modules">
-			<destination>{9efe7033-1f54-4ba4-98f9-70f5fd993984}</destination>
+			<destination>{4503dd67-bd8b-491a-a288-ed62d3f92a75}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{8846cd7f-2e54-4056-8562-bffe00345103}</destination>
@@ -73,7 +76,7 @@
 	</object>
 	<object class="GroupTrack" id="{9b931b04-9366-4e9a-9fce-c341e78ee4da}">
 		<relationship name="modules">
-			<destination>{7667152b-55c6-410b-bc81-bf0e6119d074}</destination>
+			<destination>{a88e5b9a-8b8c-43a5-ba4b-f239c1d9da44}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{98bf12b9-5164-4243-8f24-26de458c3957}</destination>
@@ -81,8 +84,8 @@
 	</object>
 	<object class="Timeline" id="{7f8f28c4-4551-4353-a89a-62d2a6a08640}">
 		<relationship name="modules">
-			<destination>{9efe7033-1f54-4ba4-98f9-70f5fd993984}</destination>
-			<destination>{7667152b-55c6-410b-bc81-bf0e6119d074}</destination>
+			<destination>{4503dd67-bd8b-491a-a288-ed62d3f92a75}</destination>
+			<destination>{a88e5b9a-8b8c-43a5-ba4b-f239c1d9da44}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{f43be64b-e296-483f-9a5b-bccc5cc651cf}">
@@ -102,12 +105,12 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9c35d3b9-014d-497b-867a-afbf7af7a7a6}" />
-	<object class="SingleSound" id="{9efe7033-1f54-4ba4-98f9-70f5fd993984}">
+	<object class="SingleSound" id="{4503dd67-bd8b-491a-a288-ed62d3f92a75}">
 		<property name="length">
-			<value>0.53860416666666666</value>
+			<value>7</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{d642db89-715a-44af-bd66-3152e35870b0}</destination>
+			<destination>{90ce036b-cb46-4101-a13a-958ef9366547}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{8846cd7f-2e54-4056-8562-bffe00345103}">
@@ -124,18 +127,21 @@
 			<destination>{f43be64b-e296-483f-9a5b-bccc5cc651cf}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{7667152b-55c6-410b-bc81-bf0e6119d074}">
-		<property name="length">
-			<value>3.6520208333333333</value>
+	<object class="SingleSound" id="{a88e5b9a-8b8c-43a5-ba4b-f239c1d9da44}">
+		<property name="start">
+			<value>0.5</value>
 		</property>
-		<property name="volume">
-			<value>-38</value>
+		<property name="length">
+			<value>5.5</value>
 		</property>
 		<relationship name="audioFile">
-			<destination>{e88e5716-ac05-4b2f-bb94-379bde14c63e}</destination>
+			<destination>{9ec62e9a-af9b-48f6-9d30-fef532e6375a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{98bf12b9-5164-4243-8f24-26de458c3957}">
+		<property name="volume">
+			<value>-10.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 2</value>
 		</property>
@@ -170,6 +176,7 @@
 	<object class="MixerBusEffectChain" id="{91b0bfa8-78e0-4271-8559-c78c12f85c34}">
 		<relationship name="effects">
 			<destination>{e39d779a-7c39-4f9f-b999-b68c607706b4}</destination>
+			<destination>{a570551c-a9cd-4e68-bcbf-edf540fa70c1}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{97c599c1-ae8e-4811-977d-d71343d0554c}" />
@@ -177,4 +184,12 @@
 	<object class="SpatialiserEffect" id="{c98002bb-711a-4c33-999f-c3ad580fcf8a}" />
 	<object class="MixerBusFader" id="{89e6a002-7207-4c50-a246-7912f9c0adfa}" />
 	<object class="MixerBusFader" id="{e39d779a-7c39-4f9f-b999-b68c607706b4}" />
+	<object class="SFXReverbEffect" id="{a570551c-a9cd-4e68-bcbf-edf540fa70c1}">
+		<property name="decayTime">
+			<value>4700</value>
+		</property>
+		<property name="wetLevel">
+			<value>10</value>
+		</property>
+	</object>
 </objects>
