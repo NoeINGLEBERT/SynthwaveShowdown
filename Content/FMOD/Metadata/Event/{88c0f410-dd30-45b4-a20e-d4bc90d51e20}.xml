@@ -102,9 +102,6 @@
 		</relationship>
 	</object>
 	<object class="GroupTrack" id="{3a274549-dd8a-4553-9bbe-09c925e1937c}">
-		<relationship name="modules">
-			<destination>{4cea091b-2551-4e5a-b938-84124f143630}</destination>
-		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{2da5f557-af8f-4eec-814b-72faab5373ca}</destination>
 		</relationship>
@@ -117,7 +114,6 @@
 			<destination>{2dd62e62-9877-4f09-aec1-aa5e13b13e27}</destination>
 			<destination>{90bfdc6c-fed8-4bb3-9eb5-2a2e67677002}</destination>
 			<destination>{c0bcce89-3b2f-474f-88bc-8bbe6af69c21}</destination>
-			<destination>{4cea091b-2551-4e5a-b938-84124f143630}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{5774052d-0127-4c24-a1bb-cbcad4a882a4}">
@@ -230,7 +226,7 @@
 			<value>4</value>
 		</property>
 		<property name="volume">
-			<value>-19.5</value>
+			<value>-11</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{49d75471-e6b2-453c-81f0-ad04b005801f}</destination>
@@ -266,7 +262,7 @@
 			<value>3</value>
 		</property>
 		<property name="volume">
-			<value>-8</value>
+			<value>-6.5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{9cae2b66-36f3-4269-a3f9-aada5be37792}</destination>
@@ -287,20 +283,6 @@
 		</relationship>
 		<relationship name="output">
 			<destination>{5774052d-0127-4c24-a1bb-cbcad4a882a4}</destination>
-		</relationship>
-	</object>
-	<object class="CommandSound" id="{4cea091b-2551-4e5a-b938-84124f143630}">
-		<property name="length">
-			<value>0.28125</value>
-		</property>
-		<property name="commandType">
-			<value>3</value>
-		</property>
-		<property name="targetValue">
-			<value>10</value>
-		</property>
-		<relationship name="commandTarget">
-			<destination>{ca7082c5-1c87-4ffd-b8b9-dc72c48f8357}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{2da5f557-af8f-4eec-814b-72faab5373ca}">
@@ -479,6 +461,9 @@
 	</object>
 	<object class="MixerBusFader" id="{2d5e0b95-1a0b-43bd-a54c-fd9a6a6d7771}" />
 	<object class="ThreeEQEffect" id="{814337d6-13c7-4131-833c-369467342c96}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
 		<property name="lowGain">
 			<value>-19</value>
 		</property>

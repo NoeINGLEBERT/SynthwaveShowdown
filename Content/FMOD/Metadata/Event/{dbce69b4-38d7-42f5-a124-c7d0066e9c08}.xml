@@ -106,7 +106,7 @@
 	</object>
 	<object class="GroupTrack" id="{714308a8-3a99-46f8-b58f-ddaf40ab0283}">
 		<relationship name="modules">
-			<destination>{d2cdbd19-4f9e-4cea-afa4-2e4d4bb2bfd6}</destination>
+			<destination>{67514073-a84a-4278-8ab2-237a8fc4dc7a}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{524d2fc3-7948-4da3-b94a-124576b3e048}</destination>
@@ -120,7 +120,7 @@
 			<destination>{53d7a8a0-897e-4bef-a8a9-35a2f8709e37}</destination>
 			<destination>{bce76ce4-dffb-495a-b891-807b180465dc}</destination>
 			<destination>{ec2c7ffb-0d1f-474f-949c-0418d753e41d}</destination>
-			<destination>{d2cdbd19-4f9e-4cea-afa4-2e4d4bb2bfd6}</destination>
+			<destination>{67514073-a84a-4278-8ab2-237a8fc4dc7a}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProxy" id="{25d4fb65-c8e4-4f16-9799-f5f85e33bfe5}">
@@ -238,7 +238,7 @@
 			<value>4</value>
 		</property>
 		<property name="volume">
-			<value>-16</value>
+			<value>-13</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{3fe2af34-9fe1-4f44-acfa-0b3a3f50e291}</destination>
@@ -274,7 +274,7 @@
 			<value>3</value>
 		</property>
 		<property name="volume">
-			<value>-16.5</value>
+			<value>-10.5</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{31b63e4b-5058-477b-aaa2-c5e4ae63d5ed}</destination>
@@ -297,9 +297,9 @@
 			<destination>{c6235ccc-1b6c-4d93-bcdf-eeeb27871fb3}</destination>
 		</relationship>
 	</object>
-	<object class="CommandSound" id="{d2cdbd19-4f9e-4cea-afa4-2e4d4bb2bfd6}">
+	<object class="CommandSound" id="{67514073-a84a-4278-8ab2-237a8fc4dc7a}">
 		<property name="length">
-			<value>0.28125</value>
+			<value>0.125</value>
 		</property>
 		<property name="commandType">
 			<value>3</value>
