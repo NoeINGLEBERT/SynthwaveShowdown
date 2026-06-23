@@ -741,7 +741,6 @@
 		<property name="startOffset">
 			<value>49.9900017</value>
 		</property>
-		<property name="name" />
 		<relationship name="event">
 			<destination>{b7032c2b-3b49-43e4-b4d3-0d46cfbd3ad4}</destination>
 		</relationship>
@@ -977,7 +976,6 @@
 		<property name="startOffset">
 			<value>49.9900017</value>
 		</property>
-		<property name="name" />
 		<relationship name="event">
 			<destination>{29705600-ef90-4f14-aa25-48d45b29f4a2}</destination>
 		</relationship>
