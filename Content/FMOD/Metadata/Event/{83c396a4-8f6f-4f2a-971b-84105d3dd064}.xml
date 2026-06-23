@@ -111,6 +111,9 @@
 		<property name="timelockedOffset">
 			<value>0.33485785705907967</value>
 		</property>
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<relationship name="automators">
 			<destination>{e7a523bd-2212-4fcc-837f-0c48e86c52b7}</destination>
 		</relationship>
