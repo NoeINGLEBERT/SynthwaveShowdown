@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{70feb791-e580-4c9c-a99c-5d98d8cba6e1}">
+		<property name="assetPath">
+			<value>SFX_Zone_Ally_Score.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{00afbdff-3ab2-4355-8a4d-2cbd10153bf9}</destination>
+		</relationship>
+	</object>
+</objects>

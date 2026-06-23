@@ -87,6 +87,8 @@
 		<relationship name="automationPoints">
 			<destination>{f3a09aa4-ae20-4565-87e6-85b07f85c53d}</destination>
 			<destination>{4467bc89-3ee1-4b6b-a692-9dc45536f518}</destination>
+			<destination>{9b5c5e5a-9ef9-44ba-8275-9dcce6533262}</destination>
+			<destination>{f4a98367-dc68-4439-9b1c-396163fc55ca}</destination>
 		</relationship>
 	</object>
 	<object class="AutomationPoint" id="{f3a09aa4-ae20-4565-87e6-85b07f85c53d}">
@@ -105,10 +107,38 @@
 	</object>
 	<object class="AutomationPoint" id="{4467bc89-3ee1-4b6b-a692-9dc45536f518}">
 		<property name="position">
-			<value>2</value>
+			<value>3</value>
 		</property>
 		<property name="value">
-			<value>-80</value>
+			<value>-32</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.0894125327</value>
+		</property>
+		<property name="isSCurve">
+			<value>true</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{9b5c5e5a-9ef9-44ba-8275-9dcce6533262}">
+		<property name="position">
+			<value>10</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{f4a98367-dc68-4439-9b1c-396163fc55ca}">
+		<property name="position">
+			<value>4.5</value>
+		</property>
+		<property name="value">
+			<value>-32</value>
+		</property>
+		<property name="curveShape">
+			<value>1</value>
+		</property>
+		<property name="isSCurve">
+			<value>true</value>
 		</property>
 	</object>
 </objects>
